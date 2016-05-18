@@ -1,0 +1,1 @@
+awk ‘{if (NR<120000) print $0 >”newaccessa.log”;if (NR>=120000) print $0>”newaccessb.log”}’ access.log
